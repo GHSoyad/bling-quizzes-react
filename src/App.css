@@ -1,5 +1,7 @@
 :root {
   --clr-primary: #562EFF;
+  --clr-text: #0c1022;
+  --clr-bg: #e3e1ff;
 }
 
 * {
