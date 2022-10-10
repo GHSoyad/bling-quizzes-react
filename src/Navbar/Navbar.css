@@ -1,0 +1,31 @@
+.navbar {
+    background-color: var(--clr-primary);
+    box-shadow: 0 0 10px var(--clr-primary);
+    color: white;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo img {
+    max-width: 70px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-link {
+    color: white;
+}

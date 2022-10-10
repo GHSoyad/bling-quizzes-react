@@ -1,9 +1,10 @@
 import './App.css';
+import Navbar from './Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <p>Initial files for github repo</p>
+      <Navbar></Navbar>
     </div>
   );
 }
