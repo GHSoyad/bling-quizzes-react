@@ -1,0 +1,22 @@
+.topic {
+    display: flex;
+    gap: 30px;
+}
+
+.topic img {
+    max-width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.topic-img {
+    background-color: #0c1022;
+    border-radius: 5px;
+
+}
+
+.topic-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
