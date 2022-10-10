@@ -4,9 +4,15 @@ import './Question.css'
 
 const Question = (props) => {
 
-    const { question, options } = props.question;
+    const { question, options, correctAnswer } = props.question;
     const createMarkUp = () => {
         return { __html: `${question}` }
+    }
+
+    const isCorrect = (selectedOption) => {
+        if (selectedOption === correctAnswer) {
+            console.log(selectedOption)
+        }
     }
 
     return (
@@ -15,7 +21,7 @@ const Question = (props) => {
             </div>
 
             <div className='options'>
-                {options.map((option, index) => <Option option={option} number={index} key={index}></Option>)}
+                {options.map((option, index) => <Option key={index} option={option} number={index} isCorrect={isCorrect}></Option>)}
             </div>
         </div>
     );
