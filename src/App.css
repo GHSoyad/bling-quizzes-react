@@ -36,6 +36,7 @@ a {
   color: var(--clr-text);
   background-color: var(--clr-bg);
   border-radius: 20px;
+  margin: 40px auto;
 }
 
 button {
@@ -46,4 +47,5 @@ button {
   color: white;
   background-color: var(--clr-primary);
   cursor: pointer;
+  transition: .3s;
 }

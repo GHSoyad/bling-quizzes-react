@@ -1,0 +1,11 @@
+.quiz-topic h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+}

@@ -1,0 +1,15 @@
+.question {
+    padding: 30px;
+}
+
+.question-detail {
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
