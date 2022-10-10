@@ -4,6 +4,10 @@
     color: white;
 }
 
+.navbar h2 {
+    margin: 0;
+}
+
 .nav-items {
     display: flex;
     justify-content: space-between;

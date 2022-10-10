@@ -11,3 +11,8 @@
     background-color: var(--clr-primary);
     color: white;
 }
+
+.number {
+    margin-right: 10px;
+    font-weight: bolder;
+}

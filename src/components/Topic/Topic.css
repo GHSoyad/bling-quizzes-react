@@ -4,7 +4,7 @@
 }
 
 .topic img {
-    max-width: 200px;
+    max-width: 180px;
     height: 100%;
     object-fit: cover;
 }
@@ -12,11 +12,15 @@
 .topic-img {
     background-color: #0c1022;
     border-radius: 5px;
-
 }
 
 .topic-info {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.topic-info h2 {
+    margin: 0;
+    text-align: left;
 }

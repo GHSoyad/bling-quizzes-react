@@ -6,7 +6,7 @@ const Option = (props) => {
 
     return (
         <div onClick={() => isCorrect(option)}>
-            <button className='btn-option'>{number + 1}. {option}</button>
+            <button className='btn-option'><span className='number'>{number + 1}) </span> {option}</button>
         </div>
     );
 };

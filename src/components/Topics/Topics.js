@@ -7,10 +7,13 @@ const Topics = ({ quizTopics }) => {
     const topics = quizTopics.data;
 
     return (
-        <div className='topics container card-large'>
-            {
-                topics.map(topic => <Topic topic={topic} key={topic.id}></Topic>)
-            }
+        <div className='container card-large'>
+            <h2>Quiz Topics</h2>
+            <div className='topics'>
+                {
+                    topics.map(topic => <Topic topic={topic} key={topic.id}></Topic>)
+                }
+            </div>
         </div>
     );
 };
