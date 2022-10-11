@@ -8,7 +8,7 @@ import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 const Question = (props) => {
     const { number } = props;
-    const { question, options, correctAnswer } = props.question;
+    const { id, question, options, correctAnswer } = props.question;
 
     const createMarkUp = () => {
         return { __html: `${question}` }
@@ -22,7 +22,7 @@ const Question = (props) => {
         });
     }
 
-    const isCorrect = (selectedOption) => {
+    const isCorrect = (selectedOption, selectedBtnId, selectedQuestion) => {
         if (selectedOption === correctAnswer) {
             toast.success('Well Done! Your Answer is Correct', {
                 autoClose: 3000
@@ -30,6 +30,15 @@ const Question = (props) => {
         } else {
             toast.error('Your answer is Incorrect, Try Again!');
         }
+
+        const deactivatedBtns = document.getElementsByClassName(selectedQuestion);
+        for (let btns of deactivatedBtns) {
+            btns.classList.remove('active');
+        }
+        console.log(deactivatedBtns)
+
+        const activeBtn = document.getElementById(selectedBtnId);
+        activeBtn.classList.add('active');
     }
 
     return (
@@ -42,7 +51,7 @@ const Question = (props) => {
             </div>
 
             <div className='options'>
-                {options.map((option, index) => <Option key={index} option={option} number={index} isCorrect={isCorrect}></Option>)}
+                {options.map((option, index) => <Option key={index} option={option} number={index} id={id} isCorrect={isCorrect}></Option>)}
             </div>
 
             <ToastContainer
