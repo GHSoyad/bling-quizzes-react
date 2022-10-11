@@ -41,10 +41,6 @@ function App() {
         {
           path: '/blogs',
           element: <Blogs></Blogs>
-        },
-        {
-          path: '*',
-          element: <ErrorPage></ErrorPage>
         }
       ]
     },

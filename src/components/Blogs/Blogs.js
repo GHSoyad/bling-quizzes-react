@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faEye, faComment } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faEye, faComment } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import './Blogs.css';
 
