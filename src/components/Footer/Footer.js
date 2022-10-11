@@ -8,14 +8,14 @@ const Footer = () => {
         <div className='footer'>
             <div className='footer-items'>
                 <h2>Follow Us</h2>
-                <ul class="footer-icons">
+                <ul className="footer-icons">
                     <li><a href="https://www.facebook.com/golam.sowad/" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={faFacebookF} className="footer-icon"></FontAwesomeIcon></a></li>
                     <li><a href="https://www.instagram.com/gh_sowad/" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={faInstagram} className="footer-icon"></FontAwesomeIcon></a>
                     </li>
                     <li><a href="https://www.linkedin.com/in/ghsoyad/" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={faLinkedinIn} className="footer-icon"></FontAwesomeIcon></a></li>
                     <li><a href="https://github.com/GHSoyad" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={faGithub} className="footer-icon"></FontAwesomeIcon></a></li>
                 </ul>
-                <p class="copyright">Golam Hasnain Soyad | All Rights Reserved</p>
+                <p className="copyright">Golam Hasnain Soyad | All Rights Reserved</p>
             </div>
         </div>
     );
