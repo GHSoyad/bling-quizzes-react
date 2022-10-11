@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
-import './Statistics.css'
 
 const Statistics = () => {
 
@@ -13,7 +12,7 @@ const Statistics = () => {
         <div className='container card-large'>
             <h2>Quiz Number Statistics</h2>
             <ResponsiveContainer width="100%" height={300}>
-                <LineChart data={data}>
+                <LineChart data={data} margin={{ left: -30 }}>
                     <Line type="monotone" dataKey="total" stroke="#ff2000"></Line>
                     <CartesianGrid strokeDasharray="10" stroke='#0c102230'></CartesianGrid>
                     <XAxis dataKey="name" stroke='#0c1022'></XAxis>

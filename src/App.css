@@ -59,3 +59,29 @@ button {
 .icon {
   color: var(--clr-text-primary);
 }
+
+@media screen and (max-width: 1200px) {
+  .card-large {
+    margin: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-large {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .card-large {
+    padding: 30px 20px;
+    color: var(--clr-text);
+    background-color: var(--clr-bg);
+    border-radius: 10px;
+    margin: 20px 10px;
+  }
+}

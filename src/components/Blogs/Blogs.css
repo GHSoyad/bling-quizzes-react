@@ -44,3 +44,13 @@
 .blog-info .icon {
     padding-top: 2px;
 }
+
+@media screen and (max-width: 992px) {
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog {
+        padding: 20px;
+    }
+}
