@@ -15,4 +15,15 @@
 .number {
     margin-right: 10px;
     font-weight: bolder;
+    white-space: nowrap;
+}
+
+.btn-option:active {
+    background-color: var(--clr-primary);
+    color: white;
+}
+
+.options .active {
+    background-color: var(--clr-primary);
+    color: white;
 }

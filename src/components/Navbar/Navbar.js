@@ -11,7 +11,8 @@ const Navbar = () => {
                     <h2>Bling Quizzes</h2>
                 </Link>
                 <div className='nav-links'>
-                    <NavLink to="/" className='nav-link'>Topics</NavLink>
+                    <NavLink to="/" className='nav-link'>Home</NavLink>
+                    <NavLink to="/topics" className='nav-link'>Topics</NavLink>
                     <NavLink to="/statistics" className='nav-link'>Statistics</NavLink>
                     <NavLink to="/blogs" className='nav-link'>Blogs</NavLink>
                 </div>

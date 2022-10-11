@@ -14,7 +14,7 @@ const QuizTopic = () => {
 
             <div className='questions'>
                 {
-                    questions.map(question => <Question question={question} key={question.id}></Question>)
+                    questions.map((question, index) => <Question question={question} number={index} key={question.id}></Question>)
                 }
             </div>
         </div>

@@ -3,43 +3,42 @@ import Option from '../Option/Option';
 import './Question.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 const Question = (props) => {
-
+    const { number } = props;
     const { question, options, correctAnswer } = props.question;
+
     const createMarkUp = () => {
         return { __html: `${question}` }
+    }
+
+    const displayAnswer = (correctAnswer) => {
+        console.log(correctAnswer)
+        toast.info(`${correctAnswer}`, {
+            position: "top-center",
+            autoClose: 5000
+        });
     }
 
     const isCorrect = (selectedOption) => {
         if (selectedOption === correctAnswer) {
             toast.success('Well Done! Your Answer is Correct', {
-                position: "top-left",
-                autoClose: 3000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: false,
-                progress: undefined,
-                theme: "colored",
+                autoClose: 3000
             });
         } else {
-            toast.error('Your answer is Incorrect, Try Again!', {
-                position: "top-left",
-                autoClose: 1000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: false,
-                progress: undefined,
-                theme: "colored",
-            });
+            toast.error('Your answer is Incorrect, Try Again!');
         }
     }
 
     return (
         <div className='card question'>
-            <div className='question-detail' dangerouslySetInnerHTML={createMarkUp()}>
+            <FontAwesomeIcon onClick={() => displayAnswer(correctAnswer)} icon={faEye} className="icon tags" title="See Answer"></FontAwesomeIcon>
+            <div className='question-detail'>
+                <p className='number'>Quiz {number + 1}. </p>
+                <p dangerouslySetInnerHTML={createMarkUp()}>
+                </p>
             </div>
 
             <div className='options'>
@@ -51,11 +50,11 @@ const Question = (props) => {
                 autoClose={1000}
                 hideProgressBar={false}
                 newestOnTop={false}
-                closeOnClick
                 rtl={false}
                 pauseOnFocusLoss={false}
                 draggable={false}
                 pauseOnHover
+                theme="colored"
             />
         </div>
     );

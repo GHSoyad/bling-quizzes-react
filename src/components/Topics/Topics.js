@@ -1,13 +1,15 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 import Topic from '../Topic/Topic';
 import './Topics.css'
 
-const Topics = ({ quizTopics }) => {
+const Topics = () => {
 
-    const topics = quizTopics.data;
+    const topicLoader = useLoaderData();
+    const topics = topicLoader.data;
 
     return (
-        <div className='container card-large'>
+        <div id='topics' className='container card-large'>
             <h2>Quiz Topics</h2>
             <div className='topics'>
                 {
