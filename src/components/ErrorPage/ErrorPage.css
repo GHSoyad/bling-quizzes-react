@@ -1,0 +1,58 @@
+.outer-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.error-container {
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.error-title {
+    font-size: 300px;
+    font-weight: bold;
+}
+
+.error-message {
+    font-size: 40px;
+}
+
+.error-description {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 768px) {
+    .error-title {
+        font-size: 180px;
+    }
+
+    .error-message {
+        font-size: 30px;
+    }
+
+    .error-description {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .error-title {
+        font-size: 100px;
+    }
+
+    .error-message {
+        font-size: 20px;
+    }
+
+    .error-description {
+        font-size: 16px;
+    }
+}
