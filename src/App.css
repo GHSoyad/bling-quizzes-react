@@ -1,6 +1,7 @@
 :root {
   --clr-primary: rgba(255, 68, 0, 0.9);
   --clr-text: #0c1022;
+  --clr-text-primary: #ff2000;
   --clr-bg: rgb(255, 210, 190);
 }
 
@@ -37,14 +38,14 @@ button {
 }
 
 .card {
-  box-shadow: 5px 5px 10px rgb(0 0 0 / 30%), -5px -5px 10px rgb(255 255 255);
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 30%), -5px -5px 10px rgb(255 255 255 / 60%);
   transition: .3s;
   padding: 20px;
   border-radius: 10px;
 }
 
 .card:hover {
-  box-shadow: 7px 7px 10px rgb(0 0 0 / 50%), -7px -7px 10px rgb(255 255 255);
+  box-shadow: 7px 7px 10px rgb(0 0 0 / 50%), -7px -7px 15px rgb(255 255 255 / 80%);
 }
 
 .card-large {
@@ -53,4 +54,8 @@ button {
   background-color: var(--clr-bg);
   border-radius: 20px;
   margin: 40px auto;
+}
+
+.icon {
+  color: var(--clr-text-primary);
 }

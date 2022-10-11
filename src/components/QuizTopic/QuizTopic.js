@@ -10,7 +10,7 @@ const QuizTopic = () => {
 
     return (
         <div className='container card-large quiz-topic'>
-            <h2>{name} Quizzes</h2>
+            <h2>{name} : {questions.length} Questions</h2>
 
             <div className='questions'>
                 {
