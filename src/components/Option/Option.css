@@ -8,7 +8,7 @@
 }
 
 .btn-option:hover {
-    background-color: var(--clr-primary);
+    background-color: rgb(255, 105, 41);
     color: white;
 }
 
@@ -23,7 +23,14 @@
     color: white;
 }
 
-.options .active {
-    background-color: var(--clr-primary);
+.options .correct {
+    background-color: #1da84c;
     color: white;
+    border: 1px solid transparent;
+}
+
+.options .incorrect {
+    background-color: rgb(219, 33, 70);
+    color: white;
+    border: 1px solid transparent;
 }

@@ -16,29 +16,33 @@ const Question = (props) => {
 
     const displayAnswer = (correctAnswer) => {
         console.log(correctAnswer)
-        toast.info(`${correctAnswer}`, {
+        toast.info(`Quiz ${number + 1}: \u00A0${correctAnswer}`, {
             position: "top-center",
             autoClose: 5000
         });
     }
 
     const isCorrect = (selectedOption, selectedBtnId, selectedQuestion) => {
-        if (selectedOption === correctAnswer) {
-            toast.success('Well Done! Your Answer is Correct', {
-                autoClose: 3000
-            });
-        } else {
-            toast.error('Your answer is Incorrect, Try Again!');
-        }
 
         const deactivatedBtns = document.getElementsByClassName(selectedQuestion);
         for (let btns of deactivatedBtns) {
-            btns.classList.remove('active');
+            btns.classList.remove('correct');
+            btns.classList.remove('incorrect');
         }
         console.log(deactivatedBtns)
 
         const activeBtn = document.getElementById(selectedBtnId);
-        activeBtn.classList.add('active');
+
+        if (selectedOption === correctAnswer) {
+            toast.success('Well Done! Your Answer is Correct', {
+                autoClose: 3000
+            });
+            activeBtn.classList.add('correct');
+        } else {
+            toast.error('Your answer is Incorrect, Try Again!');
+            activeBtn.classList.add('incorrect');
+        }
+
     }
 
     return (
