@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Bling Quizzes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Live Website Link https://bling-quizzes-ghsoyad.netlify.app/
 
-## Available Scripts
+## Description
+The Project is developed using React JS
 
-In the project directory, you can run:
+### Library's used
+Some of the library's that was used in the project
 
-### `npm start`
+#### React Router
+ - To navigate the website
+ - To load data from the API
+ - To make dynamic paths for the website component
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### React Toastify
+ - To display correct answer
+ - To display selected answer
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### ReCharts
+ - To display statistics chart
 
-### `npm test`
+#### React FontAwesome
+ - To display icons
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pages
+The website consists of 5 main pages
 
-### `npm run build`
+ - Home
+ - Topics
+ - Statistics
+ - Blogs
+ - QuizTopic
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The QuizTopic page is dynamic which changes based on selected topic
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Features
+Features of the website
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ - Navbar can be used to navigate the website
+ - Homepage and Topics page contains Topic list that can be selected
+ - Selecting a Topic takes user to the selected Topic Quizzes page
+ - Topic page lists all the questions and their options
+ - Topic page title shows topic name and how many questions are in the topic
+ - Selecting a option pops a toast displaying if the selected option in correct
+ - Each question has an Eye icon that opens a toast to show correct answer of the question
+ - A small section under topic page title shows live result of the selected answer
+ - Statistics page shows a line chart to show total quizzes of all the topics
+ - Blogs page shows the list of blogs
+ - Footer has the links of social media icons

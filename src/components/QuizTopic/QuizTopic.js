@@ -13,9 +13,10 @@ const QuizTopic = () => {
     const [correctAnswer, setCorrectAnswer] = useState(0);
     const [wrongAnswer, setWrongAnswer] = useState(0);
 
-
+    // Function to select answer
     const isCorrect = (selectedOption, selectedBtnId, selectedQuestion, getCorrectAnswer) => {
 
+        // Deactivate all other selected answer
         const deactivatedBtns = document.getElementsByClassName(selectedQuestion);
         for (let btns of deactivatedBtns) {
             btns.classList.remove('correct');
@@ -24,6 +25,7 @@ const QuizTopic = () => {
 
         const activeBtn = document.getElementById(selectedBtnId);
 
+        // Display selected answer toast, set class name, set answer count
         if (selectedOption === getCorrectAnswer) {
             toast.success('Well Done! Your Answer is Correct', {
                 autoClose: 3000
@@ -35,7 +37,6 @@ const QuizTopic = () => {
             activeBtn.classList.add('incorrect');
             setWrongAnswer(wrongAnswer + 1);
         }
-
     }
 
     return (

@@ -10,10 +10,13 @@ const Question = (props) => {
     const { number, isCorrect } = props;
     const { id, question, options, correctAnswer } = props.question;
 
+
+    // Function to format questions from api
     const createMarkUp = () => {
         return { __html: `${question}` }
     }
 
+    // Function to display correct answer toast
     const displayAnswer = (correctAnswer) => {
         console.log(correctAnswer)
         toast.info(`Quiz ${number + 1}: \u00A0${correctAnswer}`, {
