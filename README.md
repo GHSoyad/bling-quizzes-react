@@ -42,9 +42,11 @@ Features of the website
  - Selecting a Topic takes user to the selected Topic Quizzes page
  - Topic page lists all the questions and their options
  - Topic page title shows topic name and how many questions are in the topic
- - Selecting a option pops a toast displaying if the selected option in correct
- - Each question has an Eye icon that opens a toast to show correct answer of the question
  - A small section under topic page title shows live result of the selected answer
+ - Selecting an option pops a toast displaying if the selected option in correct
+ - Option color changes after selection based on correct or wrong
+ - After selecting an option other options will be disabled
+ - Each question has an Eye icon that opens a toast to show correct answer of the question
  - Statistics page shows a line chart to show total quizzes of all the topics
  - Blogs page shows the list of blogs
  - Footer has the links of social media icons

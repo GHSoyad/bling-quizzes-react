@@ -1,3 +1,5 @@
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Topic.css'
@@ -16,7 +18,9 @@ const Topic = ({ topic }) => {
                     <h2>{name}</h2>
                     <h3>Total Quizzes: {total}</h3>
                 </div>
-                <Link to={`/topic/${id}`}><button>Take Quiz</button></Link>
+                <Link to={`/topic/${id}`}>
+                    <button className='topic-btn'><span>Take Quiz</span> <FontAwesomeIcon icon={faArrowRight} className='topic-icon'></FontAwesomeIcon></button>
+                </Link>
             </div>
         </div>
     );

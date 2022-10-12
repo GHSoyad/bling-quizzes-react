@@ -30,6 +30,32 @@
     text-align: left;
 }
 
+.topic-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.topic:hover .topic-icon {
+    animation: slide 1s linear 3;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(8px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
 @media screen and (max-width: 576px) {
     .topic {
         gap: 20px;

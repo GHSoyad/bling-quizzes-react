@@ -21,6 +21,7 @@ const QuizTopic = () => {
         for (let btns of deactivatedBtns) {
             btns.classList.remove('correct');
             btns.classList.remove('incorrect');
+            btns.setAttribute('disabled', true);
         }
 
         const activeBtn = document.getElementById(selectedBtnId);

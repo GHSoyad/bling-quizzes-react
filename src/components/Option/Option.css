@@ -12,15 +12,17 @@
     color: white;
 }
 
+.btn-option:disabled {
+    background-color: rgb(219, 186, 171);
+    color: rgb(79, 73, 73);
+    cursor: default;
+    border: 1px solid transparent;
+}
+
 .number {
     margin-right: 10px;
     font-weight: bolder;
     white-space: nowrap;
-}
-
-.btn-option:active {
-    background-color: var(--clr-primary);
-    color: white;
 }
 
 .options .correct {
