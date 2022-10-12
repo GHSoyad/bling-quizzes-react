@@ -18,8 +18,11 @@
     margin-bottom: 30px;
     margin-right: 30px;
     font-weight: bold;
-    color: var(--clr-text-primary);
     text-align: left;
+}
+
+.question-detail .number {
+    color: var(--clr-text-primary);
 }
 
 .options {
@@ -31,6 +34,10 @@
 @media screen and (max-width: 768px) {
     .question {
         padding: 20px;
+    }
+
+    .question .icon {
+        right: 20px;
     }
 
     .options {

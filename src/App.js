@@ -51,7 +51,8 @@ function App() {
     },
     {
       path: '*',
-      element: <ErrorPage></ErrorPage>
+      element: <ErrorPage></ErrorPage>,
+      errorElement: <ErrorPage></ErrorPage>
     }
   ])
 
