@@ -6,7 +6,6 @@ const Statistics = () => {
 
     const loaderData = useLoaderData();
     const data = loaderData.data;
-    console.log(data);
 
     return (
         <div className='container card-large'>
